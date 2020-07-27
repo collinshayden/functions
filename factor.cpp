@@ -1,4 +1,4 @@
-//function to output factors of n
+//function to output factors of n, including 1 and n
 #include <iostream>
 #include <vector>
 using namespace std; 
@@ -11,7 +11,7 @@ std::vector<int> factor(int n)
       factorVect.push_back(i);
     }
   } 
-  factorVect.push_back(n);
+  factorVect.push_back(n);//includes n as a factor
   return factorVect;
 }
 
